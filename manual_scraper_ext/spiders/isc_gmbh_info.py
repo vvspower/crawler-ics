@@ -33,16 +33,16 @@ class IscGmbhInfoSpider(scrapy.Spider):
             file_urls = []
             manual = Manual()
             product = response.css('div.product-category div::text').get()
-            manual["product"] = product
+            manual["product"] = self.clean_product(product)
             # checking product
             product_parent = response.xpath(
                 "//ul[contains(@class, 'clearfix')]/li[last()-1]//a/span/text()").get()
-            manual["product_parent"] = product_parent if product_parent.lower(
+            manual["product_parent"] = self.clean_product(product_parent) if product_parent.lower(
             ) != product.lower() else ""
             manual["url"] = response.url
             manual["type"] = "Instructions"
-            manual["model"] = response.css(
-                'div.product-name h1::text').get().replace("\n", " ").strip()
+            manual["model"] = self.clean_model(response.css(
+                'div.product-name h1::text').get().replace("\n", " ").strip(), product)
             manual["source"] = "ics-gmbh.com"
             manual["brand"] = brand
             for div in response.xpath('//div[contains(@class, "result-name")]'):
@@ -52,7 +52,7 @@ class IscGmbhInfoSpider(scrapy.Spider):
                         download_link = div.xpath('a/@href').get()
                         file_urls.append(download_link)
                 else:
-                    self.logger("No Manuals in Product")
+                    self.logger.error("No Manuals in Product")
                     return
             manual["thumb"] = response.css(
                 'div.product-image-wrap a::attr(href)').get()
@@ -61,3 +61,24 @@ class IscGmbhInfoSpider(scrapy.Spider):
 
             if len(file_urls) != 0:
                 yield manual
+
+    def clean_model(self, model, product):
+        pattern = r'^[\w\s-]+[^-_\s;]+'
+        match = re.search(pattern, model)
+        if match:
+            output = match.group(0).replace(",", "").replace(
+                ";", "").replace(".", " ").replace('"', "").replace("'", "").replace(product.lower(), "")
+            return re.sub(r'"[\w\s]*"', '', output).strip()
+        else:
+            return model.replace(",", "").replace(";", "").replace("-", " ").strip()
+
+    def clean_product(self, product):
+        output_str = ""
+        if product != 'Home':
+            pattern = r"\s*\([^)]*\)"
+            output_str = re.sub(pattern, "", product)
+            output_str.replace(",", "").replace(";", "").strip()
+            return output_str
+        else:
+            self.logger.error("Product does not have a Parent Product")
+            return output_str

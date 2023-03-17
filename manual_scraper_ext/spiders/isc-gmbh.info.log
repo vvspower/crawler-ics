@@ -1,0 +1,535 @@
+2023-03-17 17:52:10 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: manual_scraper_ext)
+2023-03-17 17:52:10 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.2, Platform Windows-10-10.0.19045-SP0
+2023-03-17 17:57:39 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: manual_scraper_ext)
+2023-03-17 17:57:40 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.2, Platform Windows-10-10.0.19045-SP0
+2023-03-17 17:57:40 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'manual_scraper_ext',
+ 'CONCURRENT_REQUESTS': 5,
+ 'DOWNLOAD_DELAY': 0.3,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'isc-gmbh.info.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'manual_scraper_ext.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['manual_scraper_ext.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-03-17 17:57:40 [scrapy.extensions.telnet] INFO: Telnet Password: a43b9f7ce1aaef54
+2023-03-17 17:57:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-17 17:57:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-17 17:57:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-17 17:57:40 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-03-17 17:57:40 [scrapy.core.engine] INFO: Spider opened
+2023-03-17 17:57:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-17 17:57:40 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-17 17:57:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:57:48 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:01 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:08 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:36 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:39 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:39 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:40 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:40 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 123 pages/min), scraped 42 items (at 42 items/min)
+2023-03-17 17:58:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:48 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:50 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:53 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:53 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:53 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:54 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:58:54 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:21 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 17:59:40 [scrapy.extensions.logstats] INFO: Crawled 272 pages (at 149 pages/min), scraped 78 items (at 36 items/min)
+2023-03-17 17:59:57 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:00:40 [scrapy.extensions.logstats] INFO: Crawled 420 pages (at 148 pages/min), scraped 101 items (at 23 items/min)
+2023-03-17 18:00:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:01:40 [scrapy.extensions.logstats] INFO: Crawled 572 pages (at 152 pages/min), scraped 105 items (at 4 items/min)
+2023-03-17 18:02:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:35 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:36 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:39 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:40 [scrapy.extensions.logstats] INFO: Crawled 733 pages (at 161 pages/min), scraped 108 items (at 3 items/min)
+2023-03-17 18:02:42 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:43 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:47 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:47 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:47 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:02:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:12 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:40 [scrapy.extensions.logstats] INFO: Crawled 888 pages (at 155 pages/min), scraped 112 items (at 4 items/min)
+2023-03-17 18:03:54 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:03:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:01 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:12 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:04:40 [scrapy.extensions.logstats] INFO: Crawled 951 pages (at 63 pages/min), scraped 156 items (at 44 items/min)
+2023-03-17 18:05:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:35 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:05:40 [scrapy.extensions.logstats] INFO: Crawled 1031 pages (at 80 pages/min), scraped 224 items (at 68 items/min)
+2023-03-17 18:05:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:06:40 [scrapy.extensions.logstats] INFO: Crawled 1118 pages (at 87 pages/min), scraped 263 items (at 39 items/min)
+2023-03-17 18:07:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:40 [scrapy.extensions.logstats] INFO: Crawled 1223 pages (at 105 pages/min), scraped 330 items (at 67 items/min)
+2023-03-17 18:07:43 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:43 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:43 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:46 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:50 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:50 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:55 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:55 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:07:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:21 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:30 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:08:40 [scrapy.extensions.logstats] INFO: Crawled 1321 pages (at 98 pages/min), scraped 382 items (at 52 items/min)
+2023-03-17 18:09:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:08 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:13 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:16 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:09:40 [scrapy.extensions.logstats] INFO: Crawled 1432 pages (at 111 pages/min), scraped 449 items (at 67 items/min)
+2023-03-17 18:10:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:09 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:18 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:36 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:37 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:40 [scrapy.extensions.logstats] INFO: Crawled 1512 pages (at 80 pages/min), scraped 508 items (at 59 items/min)
+2023-03-17 18:10:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:42 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:52 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:10:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:08 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:08 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:08 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:21 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:35 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:36 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:39 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:40 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:40 [scrapy.extensions.logstats] INFO: Crawled 1593 pages (at 81 pages/min), scraped 571 items (at 63 items/min)
+2023-03-17 18:11:54 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:11:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:00 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:01 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:14 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:16 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:21 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:22 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:40 [scrapy.extensions.logstats] INFO: Crawled 1671 pages (at 78 pages/min), scraped 618 items (at 47 items/min)
+2023-03-17 18:12:40 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:57 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:12:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:19 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:20 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:21 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:25 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:33 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:13:40 [scrapy.extensions.logstats] INFO: Crawled 1776 pages (at 105 pages/min), scraped 690 items (at 72 items/min)
+2023-03-17 18:14:12 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:26 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:27 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:35 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:14:40 [scrapy.extensions.logstats] INFO: Crawled 1828 pages (at 52 pages/min), scraped 733 items (at 43 items/min)
+2023-03-17 18:15:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:23 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:24 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:36 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:38 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:39 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:40 [scrapy.extensions.logstats] INFO: Crawled 1910 pages (at 82 pages/min), scraped 801 items (at 68 items/min)
+2023-03-17 18:15:45 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:45 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:47 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:57 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:57 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:15:59 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:01 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:01 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:02 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:03 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:04 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:05 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:06 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:07 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:09 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:10 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:11 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:15 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:17 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:28 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:29 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:31 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:32 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:34 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:35 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:40 [scrapy.extensions.logstats] INFO: Crawled 2005 pages (at 95 pages/min), scraped 865 items (at 64 items/min)
+2023-03-17 18:16:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:41 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:42 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:44 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:45 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:45 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:45 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:47 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:48 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:48 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:49 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:49 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:49 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:50 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:51 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:54 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:56 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:57 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:16:58 [isc-gmbh.info] ERROR: Product does not have a Parent Product
+2023-03-17 18:17:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-17 18:17:02 [scrapy.extensions.feedexport] INFO: Stored csv feed (894 items) in: isc-gmbh.info.csv
+2023-03-17 18:17:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 945355,
+ 'downloader/request_count': 2043,
+ 'downloader/request_method_count/GET': 2043,
+ 'downloader/response_bytes': 52203395,
+ 'downloader/response_count': 2043,
+ 'downloader/response_status_count/200': 2043,
+ 'dupefilter/filtered': 1102,
+ 'elapsed_time_seconds': 1161.348808,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 17, 13, 17, 2, 87771),
+ 'httpcompression/response_bytes': 600158978,
+ 'httpcompression/response_count': 2043,
+ 'item_scraped_count': 894,
+ 'log_count/ERROR': 440,
+ 'log_count/INFO': 30,
+ 'request_depth_max': 2,
+ 'response_received_count': 2043,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2042,
+ 'scheduler/dequeued/memory': 2042,
+ 'scheduler/enqueued': 2042,
+ 'scheduler/enqueued/memory': 2042,
+ 'start_time': datetime.datetime(2023, 3, 17, 12, 57, 40, 738963)}
+2023-03-17 18:17:02 [scrapy.core.engine] INFO: Spider closed (finished)
