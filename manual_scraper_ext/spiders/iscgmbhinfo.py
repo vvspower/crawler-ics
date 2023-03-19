@@ -4,7 +4,7 @@ from manual_scraper_ext.items import Manual
 
 
 class IscGmbhInfoSpider(scrapy.Spider):
-    name = "isc-gmbh.info"
+    name = "iscgmbhinfo"
     allowed_domains = ["www.isc-gmbh.info"]
     start_urls = ["https://www.isc-gmbh.info/isc_de_en/"]
 
