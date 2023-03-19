@@ -14,13 +14,16 @@ class IscGmbhInfoSpider(scrapy.Spider):
     }
 
     def parse(self, response):
-        for link in response.css('div.form-group a::attr(href)').getall():
-            if len(link.split("/")) == 8:
-                yield response.follow(link, callback=self.parse_parent)
+        for link in response.css('div.form-group'):
+            src = link.css("a::attr(href)").get()
+            parent_product = link.css("span::text").get()
+            if len(src.split("/")) == 8:
+                yield response.follow(src, callback=self.parse_parent, meta={"product_parent": parent_product})
 
     def parse_parent(self, response):
+        parent_product = response.meta["product_parent"]
         for link in response.css("div.item-span a::attr(href)").getall():
-            yield response.follow(link, callback=self.parse_product)
+            yield response.follow(link, callback=self.parse_product, meta={"product_parent": parent_product})
 
         next_page = response.css("li.next a::attr(href)").extract_first()
         if next_page:
@@ -34,11 +37,9 @@ class IscGmbhInfoSpider(scrapy.Spider):
             manual = Manual()
             product = response.css('div.product-category div::text').get()
             manual["product"] = self.clean_product(product)
-            # checking product
-            product_parent = response.xpath(
-                "//ul[contains(@class, 'clearfix')]/li[last()-1]//a/span/text()").get()
-            manual["product_parent"] = self.clean_product(product_parent) if product_parent.lower(
-            ) != product.lower() else ""
+            product_parent = response.meta["product_parent"]
+            manual["product_parent"] = self.clean_product(
+                product_parent) if product_parent != None else ""
             manual["url"] = response.url
             manual["type"] = "Instructions"
             manual["model"] = self.clean_model(response.css(
@@ -73,12 +74,7 @@ class IscGmbhInfoSpider(scrapy.Spider):
             return model.replace(",", "").replace(";", "").replace("-", " ").strip()
 
     def clean_product(self, product):
-        output_str = ""
-        if product != 'Home':
-            pattern = r"\s*\([^)]*\)"
-            output_str = re.sub(pattern, "", product)
-            output_str.replace(",", "").replace(";", "").strip()
-            return output_str
-        else:
-            self.logger.error("Product does not have a Parent Product")
-            return output_str
+        pattern = r"\s*\([^)]*\)"
+        output_str = re.sub(pattern, "", product)
+        output_str.replace(",", "").replace(";", "").strip()
+        return output_str
