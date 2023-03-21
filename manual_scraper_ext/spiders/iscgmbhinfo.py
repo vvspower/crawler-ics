@@ -33,7 +33,6 @@ class IscGmbhInfoSpider(scrapy.Spider):
         brand = response.css(
             'table.product-numbers tr:last-child td:last-child::text').get()
         if "Coming soon" not in brand:
-            file_urls = []
             manual = Manual()
             product = response.css('div.product-category div::text').get()
             manual["product"] = self.clean_product(product)
@@ -46,22 +45,20 @@ class IscGmbhInfoSpider(scrapy.Spider):
                 'div.product-name h1::text').get().replace("\n", " ").strip(), product)
             manual["source"] = "ics-gmbh.com"
             manual["brand"] = brand
+            manual["product_lang"] = "en"
+            manual["thumb"] = response.css(
+                'div.product-image-wrap a::attr(href)').get()
             for div in response.xpath('//div[contains(@class, "result-name")]'):
                 if div:
                     a_text = div.xpath('a/text()').get()
                     if a_text and 'Instructions' in a_text:
                         download_link = div.xpath('a/@href').get()
-                        file_urls.append(download_link)
+                        manual["file_urls"] = [download_link]
+
+                        yield manual
                 else:
                     self.logger.error("No Manuals in Product")
                     return
-            manual["thumb"] = response.css(
-                'div.product-image-wrap a::attr(href)').get()
-            manual["file_urls"] = file_urls
-            manual["product_lang"] = "en"
-
-            if len(file_urls) != 0:
-                yield manual
 
     def clean_model(self, model, product):
         pattern = r'^[\w\s-]+[^-_\s;]+'
