@@ -25,9 +25,11 @@ class IscGmbhInfoSpider(scrapy.Spider):
         for link in response.css("div.item-span a::attr(href)").getall():
             yield response.follow(link, callback=self.parse_product, meta={"product_parent": parent_product})
 
-        next_page = response.css("li.next a::attr(href)").extract_first()
+        next_page = response.css("a.next::attr(href)").extract_first()
+        print(next_page)
         if next_page:
-            yield response.follow(next_page, callback=self.parse_parent)
+            print(next_page)
+            yield response.follow(next_page, callback=self.parse_parent, meta={"product_parent": parent_product})
 
     def parse_product(self, response):
         brand = response.css(
@@ -40,7 +42,6 @@ class IscGmbhInfoSpider(scrapy.Spider):
             manual["product_parent"] = self.clean_product(
                 product_parent) if product_parent != None else ""
             manual["url"] = response.url
-            manual["type"] = "Instructions"
             manual["model"] = self.clean_model(response.css(
                 'div.product-name h1::text').get().replace("\n", " ").strip(), product)
             manual["source"] = "ics-gmbh.com"
@@ -53,12 +54,14 @@ class IscGmbhInfoSpider(scrapy.Spider):
                     a_text = div.xpath('a/text()').get()
                     if a_text and 'Instructions' in a_text:
                         download_link = div.xpath('a/@href').get()
-                        manual["file_urls"] = [download_link]
-
-                        yield manual
-                else:
-                    self.logger.error("No Manuals in Product")
-                    return
+                        # check if link ends with '.pdf'
+                        if download_link.endswith('.pdf'):
+                            manual["file_urls"] = [download_link]
+                            manual["type"] = a_text.split()[1]
+                            yield manual
+                    else:
+                        self.logger.error("No Manuals in Product")
+                        return
 
     def clean_model(self, model, product):
         pattern = r'^[\w\s-]+[^-_\s;]+'
